@@ -1,0 +1,15 @@
+---
+- hosts: 192.168.0.109
+  tasks:
+    - user:
+        name: 'sham'
+        state: 'present'
+        
+    - yum:
+        name: 'tree'
+        state: 'latest'
+        
+    - file:
+        name: '/tmp/sham'
+        state: 'directory'
+...
