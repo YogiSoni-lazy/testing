@@ -6,7 +6,7 @@ services:
      tty: true
      command: /bin/bash
   db:
-     image: centos:6 
+     image: centos:7
      stdin_open: true
      tty: true
      command: /bin/bash
